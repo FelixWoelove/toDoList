@@ -121,4 +121,10 @@ form.addEventListener("click", (e) => {
       
 });
 
+//more ideas
+//1. Add a button to delete all the tasks
+//2. Add a button to delete only the completed tasks
+
+
+
 
