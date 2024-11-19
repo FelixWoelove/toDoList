@@ -1,0 +1,139 @@
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: repeating-linear-gradient(
+      transparent 0,
+      transparent 24px,
+      rgba(126, 124, 124, 0.5) 24px,
+      rgba(255, 255, 255, 0.5) 25px
+    ),
+    url('/photo-1617565084998-13053b7d8510.png');
+    background-size: cover;
+    background-blend-mode: multiply;
+    cursor: url('/5effa38a1b2ac04d1c221d9f55d2a868 (1).png'), auto;
+  }
+
+main {
+  background-color: #ffffffda;
+  
+  position: fixed;
+  top: 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 400px;
+  margin-top: 100px;
+}
+
+
+.resize-handle {
+    width: 15px;
+    height: 10px;
+    background-color: #007bff;
+    position: absolute;
+    border-radius: 2px;
+    right: 0;
+    bottom: 0;
+    cursor: se-resize;
+  }
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: url('/5effa38a1b2ac04d1c221d9f55d2a868\ \(1\).png'), auto;
+
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  width: 100%;
+  cursor: url('/5effa38a1b2ac04d1c221d9f55d2a868\ \(1\).png'), auto;
+
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  cursor: url('/5effa38a1b2ac04d1c221d9f55d2a868\ \(1\).png'), auto;
+
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+section {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid black;
+    animation: typewriter 1.5s steps(30, end);
+}
+
+.completed {
+  text-decoration: line-through;
+  
+  background-color: rgba(102, 99, 99, 0.603);
+  
+}
+
+span {
+  display: flex;
+  align-items: center;
+}
+
+span i {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.error-message {
+  background-color: #ffe6e6;
+  border: 1px solid red;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px 0;
+  width: 95%;
+  white-space: normal;
+  text-overflow: ellipsis;
+  display: none;
+  text-align: center;
+}
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
